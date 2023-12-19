@@ -43,14 +43,14 @@ body{
   font-size: var(--heading-md);
   font-weight: semi-bold;
   line-height: 1.2;
-  font-style:var(--font-style-header);
+  font-family:var(--font-style-header);
 }
 
 .heading-sm{
   font-size: var(--heading-sm);
   font-weight: semi-bold;
   line-height: 1.2;
-  font-style:var(--font-style-header)
+  font-family:var(--font-style-header)
 }
 
 .btn-default{
@@ -134,4 +134,101 @@ img{
   width: 100%;
   height: 100%;
   object-fit: cover;
+}
+
+/* Steps section */
+
+.steps{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  /* padding: 50px 0; */
+  padding: 225px 175px 100px 175px;
+  background-color: var(--ghost-white);
+
+}
+
+.step-box{
+  text-align: center;
+  /* padding: 0 50px; */
+}
+
+.step-icon{
+  border-radius: 50%;
+  border: 1px solid black;
+  display: inline;
+  padding: 10px 20px;
+  font-family: 'Fraunces 144', serif;
+}
+
+.step-textbox p{
+  padding: 0px 20px;
+}
+
+/* About Section & selling point */
+
+.about{
+    display:block;
+    min-height: 650px;
+}
+
+.about-container{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 100px 0;
+  position: relative;
+  width: 75%;
+  height: 50%;
+  margin: 0 auto;
+}
+.profile-image{
+  width: 300px;
+  position: absolute;
+  left: 0;
+  top: 75px;
+}
+
+.about-textbox{
+  width: 50%;
+  margin: 0 auto;
+  color: var(--white);
+  background-color: var(--dark-purple);
+  padding: 25px 75px;
+  position: absolute;
+  top: 200px;
+  left: 250px;
+
+}
+
+
+/* footer area */
+footer{
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 50px 0;
+}
+
+.footer-wrapper{
+  display: flex;
+  gap: 50px;
+  flex-direction: column;
+}
+
+.social{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+}
+
+.logo{
+  width: 100px;
+  margin: 0 10px;
+}
+
+.social a{
+  width: 24px;
 }
