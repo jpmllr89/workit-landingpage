@@ -1,0 +1,120 @@
+@font-face{
+  font-family: 'Fraunces 144';
+  src: url('../assets/fonts/fraunces/static/Fraunces_144pt-SemiBold.ttf');
+  font-weight: semi-bold;
+  font-style: normal;
+}
+
+@font-face{
+  font-family: 'manrope';
+  src: url('../assets/fonts/manrope/static/Manrope-Regular.tff');
+  font-weight: semi-bold;
+  font-style: normal;
+}
+
+
+:root{
+  --dark-purple: #24053E;
+  --davys-grey: #584D62;
+  --eucalyptus: #44ffa1;
+  --ghost-white: #fcf8ff;
+  --white: #ffffff;
+  --heading-lg: 80px;
+  --heading-md: 56px;
+  --heading-sm: 32px;
+  --font-style-header: 'Fraunces 144', serif;
+  --font-style-body: 'manrope', sans-serif;
+}
+
+body{
+  box-sizing: border-box;
+  margin: 0;
+  font-family: var(--font-style-body);
+}
+
+.heading-lg{
+  font-size: var(--heading-lg);
+  font-weight: semi-bold;
+  line-height: 1.2;
+  font-family: var(--font-style-header);
+}
+
+.heading-md{
+  font-size: var(--heading-md);
+  font-weight: semi-bold;
+  line-height: 1.2;
+  font-style:var(--font-style-header);
+}
+
+.heading-sm{
+  font-size: var(--heading-sm);
+  font-weight: semi-bold;
+  line-height: 1.2;
+  font-style:var(--font-style-header)
+}
+
+.btn-default{
+  background-color: var(--eucalyptus);
+  color: var(--dark-purple);
+  border: none;
+  padding: 10px 20px;
+}
+
+.btn-default:hover{
+  background-color: var(--dark-purple);
+  color: var(--eucalyptus);
+  border: 2px solid var(--eucalyptus);
+  padding: 10px 20px;
+}
+
+.btn-secondary{
+  border-bottom: 2px solid var(--eucalyptus);
+  color: white;
+  background-color: transparent;
+}
+
+.btn-secondary:hover{
+  border-bottom: 2px solid var(--eucalyptus);
+  color: var(--eucalyptus);
+  background-color: transparent;
+}
+
+/* header section */
+.header{
+  background-color: var(--dark-purple);
+  height: 600px;
+  clip-path: polygon(0% 0%, 0% 85%, 50% 100%, 100% 85%, 100% 0%);
+}
+
+.nav{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+}
+
+.navbar{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 30px 100px;
+}
+
+.hero{
+  display: flex;
+  justify-content: center;
+}
+
+.hero-text{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 50%;
+  padding: 0 100px;
+}
+
+.hero-text h1{
+  color: var(--ghost-white);
+  text-align: center;
+}
